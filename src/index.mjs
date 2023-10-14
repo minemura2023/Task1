@@ -1,15 +1,15 @@
 /**
  * const,let等の変数宣言
  */
-var val1 = "val変数";
-console.log(val1);
+// var val1 = "val変数";
+// console.log(val1);
 
-// var変数は上書き可能
-val1 = "var変数を上書き";
-console.log(val1);
+// // var変数は上書き可能
+// val1 = "var変数を上書き";
+// console.log(val1);
 
-var val1 = "var変数Who再宣言";
-console.log(val1);
+// var val1 = "var変数Who再宣言";
+// console.log(val1);
 
 let val2 = "let変数";
 console.log(val2);
@@ -180,3 +180,27 @@ console.log(newNameArr);
 //ある条件 ? 条件がTrueの時 : 条件がfalseの時
 const val1 = 1 < 0 ? "trueです" : "falseです";
 console.log(val1);
+
+const num = "13000";
+console.log(num.toLocaleString());
+
+const formattedNum =
+  typeof num === "number" ? num.toLocaleString() : "数値を入力してください。";
+console.log(formattedNum);
+
+const checkSum = (num1, num2) => {
+  return num1 + num2 > 100 ? "100を超えています!!" : "許容範囲内です";
+};
+console.log(checkSum(50, 40));
+
+/**
+ * 論理演算子の本当の意味
+ */
+//||は左側はfalseなら右側を返す
+// const number = 100;
+// const fee = number || "金額は未設定です。";
+// console.log(fee);
+
+const number2 = 100;
+const fee2 = number2 && "設定されました";
+console.log(fee2);
