@@ -124,7 +124,7 @@ sumFunc(...arr1);
 //まとめる
 const arr2 = [1, 2, 3, 4, 5, 6];
 const [num1, num2, ...arr3] = arr2;
-console.log(num1);
+//console.log(num1);
 console.log(num2);
 console.log(arr3);
 
@@ -174,10 +174,9 @@ const newNameArr = nameArr.map((name) => {
 });
 console.log(newNameArr);
 
-
 /**
  * ３項演算子
  */
 //ある条件 ? 条件がTrueの時 : 条件がfalseの時
-const val1 = 1 < 0 ? 'trueです' : 'falseです';
+const val1 = 1 < 0 ? "trueです" : "falseです";
 console.log(val1);
