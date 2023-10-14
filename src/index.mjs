@@ -173,3 +173,11 @@ const newNameArr = nameArr.map((name) => {
   }
 });
 console.log(newNameArr);
+
+
+/**
+ * ３項演算子
+ */
+//ある条件 ? 条件がTrueの時 : 条件がfalseの時
+const val1 = 1 < 0 ? 'trueです' : 'falseです';
+console.log(val1);
